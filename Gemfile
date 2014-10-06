@@ -15,3 +15,8 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Include gem for rack-contrib
 gem "rack-contrib"
+
+# Styling from thoughtbot libraries
+gem 'bitters'
+gem 'bourbon'
+gem 'neat'
