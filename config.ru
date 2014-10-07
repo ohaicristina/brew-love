@@ -3,7 +3,7 @@ require 'rack/contrib/try_static'
 
 # Serve files from the build directory
 use Rack::TryStatic,
-  root: 'build',
+  root: 'tmp',
     urls: %w[/],
       try: ['.html', 'index.html', '/index.html']
 
