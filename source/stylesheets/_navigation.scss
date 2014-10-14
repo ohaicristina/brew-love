@@ -1,20 +1,25 @@
 nav {
-  padding: 0 1em;
-  width: 85%;
-  height: 54px;
-  border-bottom: 1px solid white;
-  margin: 0 auto 3em;
-  display: table;
+  position: fixed;
+  width: 100%;
 
-  .navigation-items {
-    display: table-cell;
-    vertical-align: middle;
+  .navigation-format {
+    height: 54px;
+    width: 85%;
+    border-bottom: 1px solid white;
+    display: table;
+    max-width: 1080px;
+    margin: 0 auto 3em;
 
-    .nav-item {
-      display: inline;
-      color: white;
-      padding-right: 2em;
+    .navigation-items {
+      display: table-cell;
+      padding: 0 3em;
+      vertical-align: middle;
+
+      .nav-item {
+        display: inline;
+        color: white;
+        padding-right: 2em;
+      }
     }
   }
 }
-

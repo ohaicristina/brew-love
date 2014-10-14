@@ -9,14 +9,18 @@
 body {
   background: $body-background;
   font-family: $base-font-family;
+  color: $base-font-color;
 }
 
 .page-wrapper {
   @include outer-container;
+  padding: 0 $base-padding;
 }
 
 .landing {
+  padding: $base-padding * 8 0;
   text-align: center;
+  // margin-bottom: 3em;
 }
 
 .landing-header {
@@ -49,4 +53,28 @@ body {
   font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 600;
+  padding-top: $base-padding;
+}
+
+.page-section {
+  padding: 2em 0;
+}
+
+.section-info {
+  @include span-columns(5);
+}
+
+.water {
+  background-color: $water;
+}
+
+.malt {
+}
+
+.hops {
+  background-color: $hops;
+}
+
+.yeast {
+  background-color: $yeast;
 }
