@@ -1,0 +1,20 @@
+nav {
+  padding: 0 1em;
+  width: 85%;
+  height: 54px;
+  border-bottom: 1px solid white;
+  margin: 0 auto 3em;
+  display: table;
+
+  .navigation-items {
+    display: table-cell;
+    vertical-align: middle;
+
+    .nav-item {
+      display: inline;
+      color: white;
+      padding-right: 2em;
+    }
+  }
+}
+

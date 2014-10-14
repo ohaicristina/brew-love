@@ -1,10 +1,20 @@
 ---
-title: Welcome to Middleman
+title: Brew Love
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<%= partial "partials/navigation" %>
+<section class="landing">
+  <div class="page-wrapper">
+    <h1 class="landing-header">
+      <!-- Brew<span class="landing&#45;icon"></span>Love -->
+      <div class="logo">
+        <%= image_tag "brewlove-logo.png" %>
+      </div>
+    </h1>
+    <h2 class="landing-subheader">
+      Here’s an intro paragraph about this site. It’s going to be 
+      hilarious and make you want to learn all about beer. 
+      <div class="p-callout">Now let's get drunk.</div>
+    </h2>
+  </div>
+</section>
