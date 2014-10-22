@@ -1,12 +1,4 @@
-// @include font-face(Aleo, '../fonts/Aleo-Bold-webfont', normal);
-// @include font-face(Aleo, '../fonts/Aleo-BoldItalic-webfont', normal);
-// @include font-face(Aleo, '../fonts/Aleo-Light-webfont', normal);
-// @include font-face(Aleo, '../fonts/Aleo-Regular-webfont', normal);
-
-@font-face {
-    font-family: 'Aleo';
-      src: url('fonts/Aleo-Regular-webfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+,
-      Safari 5.1+ */
-       url('fonts/Aleo-Regular-webfont.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera
-       10+, Safari 3—5 */
-}
+@include font-face(Aleo-Bold, 'fonts/Aleo-Bold-webfont', normal);
+@include font-face(Aleo-BoldItalic, 'fonts/Aleo-BoldItalic-webfont', normal);
+@include font-face(Aleo-Light, 'fonts/Aleo-Light-webfont', normal);
+@include font-face(Aleo, 'fonts/Aleo-Regular-webfont', normal);
