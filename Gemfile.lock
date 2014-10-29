@@ -7,6 +7,8 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    animate-scss (0.0.5)
+      sass
     bitters (0.10.1)
       bourbon (>= 3.2)
       sass (>= 3.2)
@@ -137,6 +139,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-scss
   bitters
   bourbon
   jquery-middleman

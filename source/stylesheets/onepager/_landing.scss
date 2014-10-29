@@ -1,0 +1,38 @@
+.landing {
+  padding: $base-padding * 8 0;
+  text-align: center;
+}
+
+.landing-header {
+  text-align: center;
+  color: $yellow;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+  margin: 0;
+
+  .logo {
+    img {
+      width: 780px;
+      margin-bottom: 1em;
+      height: auto;
+    }
+  }
+}
+
+.landing-subheader {
+  @include span-columns(8);
+  @include shift(2);
+  font-family: $base-font-family;
+  color: $yellow;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.p-callout {
+  color: $malt;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: $base-padding;
+}
+

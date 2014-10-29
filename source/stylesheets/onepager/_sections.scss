@@ -1,0 +1,65 @@
+.page-section {
+  padding: 4em 0 2em;
+  height: 800px;
+  background-attachment: fixed;
+}
+
+.section-info {
+  @include span-columns(4);
+}
+
+.section-title {
+  padding-bottom: $base-padding;
+}
+
+.section-subheader {
+  padding-bottom: $base-padding / 4;
+}
+
+.ingredient-column {
+  @include span-columns(3);
+}
+
+.water {
+  background-color: $water;
+  background-image: 
+  linear-gradient(
+      rgba(42, 42, 42, 0.70), 
+      rgba(42, 42, 42, 0.70)
+    ),
+  url("../images/bg-water.jpg");
+  background-size: 100%;
+}
+
+.malt {
+  background-color: $malt;
+  background-image: 
+  linear-gradient(
+      rgba(42, 42, 42, 0.60), 
+      rgba(42, 42, 42, 0.60)
+    ),
+  url("../images/bg-malt.jpg");
+  background-size: 100%;
+}
+
+.hops {
+  background-color: $hops;
+  background-image: 
+  linear-gradient(
+      rgba(42, 42, 42, 0.60), 
+      rgba(42, 42, 42, 0.60)
+    ),
+  url("../images/bg-hops.jpg");
+  background-size: 100%;
+}
+
+.yeast {
+  background-color: $yeast;
+  background-image: 
+  linear-gradient(
+      rgba(42, 42, 42, 0.60), 
+      rgba(42, 42, 42, 0.60)
+    ),
+  url("../images/bg-yeast.jpg");
+  background-size: 100%;
+}
