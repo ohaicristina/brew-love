@@ -4,6 +4,10 @@
   background-attachment: fixed;
 }
 
+.row {
+  @include row();
+}
+
 .section-info {
   @include span-columns(4);
 }
@@ -24,9 +28,9 @@
   background-color: $water;
   background-image: 
   linear-gradient(
-      rgba(42, 42, 42, 0.70), 
-      rgba(42, 42, 42, 0.70)
-    ),
+  rgba(42, 42, 42, 0.70), 
+  rgba(42, 42, 42, 0.70)
+  ),
   url("../images/bg-water.jpg");
   background-size: 100%;
 }
@@ -35,9 +39,9 @@
   background-color: $malt;
   background-image: 
   linear-gradient(
-      rgba(42, 42, 42, 0.60), 
-      rgba(42, 42, 42, 0.60)
-    ),
+  rgba(42, 42, 42, 0.60), 
+  rgba(42, 42, 42, 0.60)
+  ),
   url("../images/bg-malt.jpg");
   background-size: 100%;
 }
@@ -46,9 +50,9 @@
   background-color: $hops;
   background-image: 
   linear-gradient(
-      rgba(42, 42, 42, 0.60), 
-      rgba(42, 42, 42, 0.60)
-    ),
+  rgba(42, 42, 42, 0.60), 
+  rgba(42, 42, 42, 0.60)
+  ),
   url("../images/bg-hops.jpg");
   background-size: 100%;
 }
@@ -57,9 +61,21 @@
   background-color: $yeast;
   background-image: 
   linear-gradient(
-      rgba(42, 42, 42, 0.60), 
-      rgba(42, 42, 42, 0.60)
-    ),
+  rgba(42, 42, 42, 0.60), 
+  rgba(42, 42, 42, 0.60)
+  ),
   url("../images/bg-yeast.jpg");
   background-size: 100%;
+}
+
+.type-container {
+  @include clearfix;
+  margin-top: 2em;
+  ul {
+    li {
+      @include span-columns(4);
+      text-align: center;
+      display: inline;
+    }
+  }
 }
