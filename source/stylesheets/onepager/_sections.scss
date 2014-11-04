@@ -2,6 +2,8 @@
   padding: 4em 0 2em;
   height: 800px;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .row {
@@ -32,7 +34,6 @@
   rgba(42, 42, 42, 0.70)
   ),
   url("../images/bg-water.jpg");
-  background-size: 100%;
 }
 
 .malt {
@@ -43,7 +44,6 @@
   rgba(42, 42, 42, 0.60)
   ),
   url("../images/bg-malt.jpg");
-  background-size: 100%;
 }
 
 .hops {
@@ -54,18 +54,16 @@
   rgba(42, 42, 42, 0.60)
   ),
   url("../images/bg-hops.jpg");
-  background-size: 100%;
 }
 
 .yeast {
   background-color: $yeast;
-  background-image: 
+  background-image:
   linear-gradient(
-  rgba(42, 42, 42, 0.60), 
+  rgba(42, 42, 42, 0.60),
   rgba(42, 42, 42, 0.60)
   ),
   url("../images/bg-yeast.jpg");
-  background-size: 100%;
 }
 
 .type-container {
@@ -103,4 +101,19 @@
       opacity: 0.8;
     }
   }
+}
+
+.offcanvas-menu {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  bottom: -300px;
+  background: #428bca;
+  padding: 15px;
+}
+
+.show-nav {
+  position: fixed;
+  -webkit-transform: translateY(-300px);
+  transform: translateY(-300px);
 }
