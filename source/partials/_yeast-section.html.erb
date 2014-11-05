@@ -1,31 +1,36 @@
 <section class="page-section yeast">
-    <div class="page-wrapper">
-      <div class="content">
-        <div class="row">
-          <div class="section-info">
-            <h2 class="section-title"><span class="section-title-i"></span>Yeast</h2>
-            <p>Here's some loremipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat nisl, porta in nibh imperdiet, facilisis sagittis diam. Cras eu ultrices ipsum. Nullam fermentum consectetur neque quis tristique dunt dapibus lacus, eget finibus urna mollis id. Cras eu ultrices ipsum. Nullam fermentum consectetur.</p>
-          </div>
+  <div class="page-wrapper">
+    <div class="content">
+      <div class="row">
+        <div class="section-info">
+          <h2 class="section-title"><span class="section-title-i"></span>Yeast</h2>
+          <p>Here's some loremipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat nisl, porta in nibh imperdiet, facilisis sagittis diam. Cras eu ultrices ipsum. Nullam fermentum consectetur neque quis tristique dunt dapibus lacus, eget finibus urna mollis id. Cras eu ultrices ipsum. Nullam fermentum consectetur.</p>
         </div>
-        <div class="type-container">
-          <ul class="beer-types">
-            <li class="type">
-            <button class="menu-button" id="open-button">Open Menu</button>
-            <h3>Lager</h3>
+      </div>
+      <div class="type-container">
+        <ul class="beer-types">
+          <li class="type">
+          <h3>Lager</h3>
+            <div class="show-offcanvas" id="#lager-trigger">
             <%= partial "partials/svg/tall-glass" %>
-            </li>
-            <li class="type">
-            <h3>Ale</h3>
+            <span>+ Learn More</span></div>
+          </li>
+          <li class="type">
+          <h3>Ale</h3>
+          <div class="show-offcanvas" id="#ale-trigger">
             <%= partial "partials/svg/tall-glass" %>
-            </li>
-            <li class="type">
+            <span>+ Learn More</span></div>
+          </li>
+          <li class="type">
             <h3>Hybrid</h3>
-            <%= partial "partials/svg/tall-glass" %>
-            </li>
-          </ul>
-        </div>
+            <div class="show-offcanvas" id="#hybrid-trigger">
+              <%= partial "partials/svg/tall-glass" %>
+              <span>+ Learn More</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
-  <div class="offcanvas-menu">Testing123</div>
+</div>
 </section>

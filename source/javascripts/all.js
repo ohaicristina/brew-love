@@ -6,8 +6,7 @@ $(document).ready(function () {
   console.log("Testing123");
 
   $(function() {
-    $('.menu-button').click(function() {
-      // Calling a function in case you want to expand upon this.
+    $('.show-offcanvas').click(function() {
       toggleNav();
     });
   });
@@ -19,6 +18,10 @@ $(document).ready(function () {
       $('.offcanvas-menu').addClass('show-nav');
     }
 
-    //$('#site-wrapper').toggleClass('show-nav');
+    if ($('#site-wrapper').hasClass('show-nav')) {
+      $('#site-wrapper').removeClass('show-nav');
+    } else {
+      $('#site-wrapper').addClass('show-nav');
+    }
   }
 });

@@ -74,8 +74,16 @@
       @include span-columns(4);
       text-align: center;
       display: inline;
+
       h3{
         font-weight: 100;
+      }
+
+      .show-offcanvas {
+        cursor: pointer;
+        &:hover {
+          color: $yeast;
+        }
       }
     }
   }
@@ -101,19 +109,4 @@
       opacity: 0.8;
     }
   }
-}
-
-.offcanvas-menu {
-  height: 300px;
-  width: 100%;
-  position: absolute;
-  bottom: -300px;
-  background: #428bca;
-  padding: 15px;
-}
-
-.show-nav {
-  position: fixed;
-  -webkit-transform: translateY(-300px);
-  transform: translateY(-300px);
 }

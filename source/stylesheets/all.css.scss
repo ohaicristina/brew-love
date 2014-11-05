@@ -8,6 +8,7 @@
 @import "fonts";
 @import "onepager/sections";
 @import "onepager/landing";
+@import "onepager/offcanvas-styles";
 
 body {
   background: $body-background;
@@ -20,21 +21,6 @@ body {
   padding: 0 $base-padding;
 }
 
-#site-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-#site-canvas {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-}
 
 .menu {
   h1 {
