@@ -14,14 +14,10 @@ $(document).ready(function () {
   function toggleNav() {
     if ($('.offcanvas-menu').hasClass('show-nav')) {
       $('.offcanvas-menu').removeClass('show-nav');
+      $('body').css('overflow', 'auto');
     } else {
       $('.offcanvas-menu').addClass('show-nav');
-    }
-
-    if ($('#site-wrapper').hasClass('show-nav')) {
-      $('#site-wrapper').removeClass('show-nav');
-    } else {
-      $('#site-wrapper').addClass('show-nav');
+      $('body').css('overflow', 'hidden');
     }
   }
 });
