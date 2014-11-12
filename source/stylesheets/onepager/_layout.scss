@@ -1,0 +1,28 @@
+.page-section {
+  padding: 4em 0 2em;
+  height: 800px;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.row {
+  @include row();
+}
+
+.section-description {
+  @include span-columns(7);
+}
+
+.section-title {
+  padding-bottom: $base-padding;
+}
+
+.section-subheader {
+  padding-bottom: $base-padding / 4;
+}
+
+.ingredient-column {
+  @include span-columns(3);
+}

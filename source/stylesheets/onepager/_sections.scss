@@ -1,30 +1,41 @@
-.page-section {
-  padding: 4em 0 2em;
-  height: 800px;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  background-size: cover;
-  position: relative;
+.section-list {
+  @include span-columns(10);
 }
 
-.row {
-  @include row();
-}
-
-.section-description {
-  @include span-columns(7);
-}
-
-.section-title {
-  padding-bottom: $base-padding;
-}
-
-.section-subheader {
-  padding-bottom: $base-padding / 4;
-}
-
-.ingredient-column {
+.list-columns {
   @include span-columns(3);
+  padding-top: $base-padding * 3;
+  height: 100px;
+  cursor: pointer;
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+.list-interactions {
+  // position: relative;
+}
+
+.section-information {
+  @include span-columns(4);
+  background-color: $transparent-background;
+  padding: $base-padding * 2;
+  position: absolute;
+  right: 0;
+
+  .information-title {
+    font-size: 1.2em;
+    padding-bottom: $base-padding;
+  }
+
+  span {
+    font-weight: 600;
+  }
+  p {
+    font-weight: 300;
+    max-width: 350px;
+  }
 }
 
 .water {
@@ -35,6 +46,12 @@
   rgba(42, 42, 42, 0.70)
   ),
   url("../images/bg-water.jpg");
+}
+
+.water-active {
+  h3 {
+    color: $water;
+  }
 }
 
 .malt {
@@ -67,35 +84,11 @@
   url("../images/bg-yeast.jpg");
 }
 
-.list-columns {
-  @include span-columns(3);
-  padding-top: $base-padding * 3;
-  height: 100px;
-
-  h3 {
-    font-size: 1.2em;
-  }
-}
-
-.list-interactions {
-  // position: relative;
-}
-
-.section-information {
-  @include span-columns(4);
-  background-color: black;
-  padding: $base-padding * 2;
-  position: absolute;
-  right: 0;
-
-  .information-title {
-    font-size: 1.2em;
-  }
-}
 
 .type-container {
   @include clearfix;
   margin-top: 2em;
+
   ul {
     li {
       @include span-columns(4);
@@ -115,6 +108,7 @@
     }
   }
 }
+
 
 .tall-glass {
   padding-top: 2em;
