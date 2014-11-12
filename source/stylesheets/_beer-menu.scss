@@ -1,17 +1,46 @@
+// FIX THIS LATERR
+// .menu-wrapper {
+//   background-image:
+//   linear-gradient(
+//   rgba(42, 42, 42, 0.60),
+//   rgba(42, 42, 42, 0.60)
+//   ),
+//   url("../images/bg-yeast.jpg");
+//   background-attachment: fixed;
+//   -webkit-background-size: cover;
+//   background-size: cover;
+// }
+
 .menu {
   h2 {
-    padding-top: $base-padding * 4;
+    padding-top: $base-padding;
   }
 }
 
 .menu-column {
   @include span-columns(7);
-  background-color: pink;
+  border: 1px solid white;
+  margin-top: $base-padding * 5;
 }
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-item-box {
+  border: 1px solid $yeast;
+  padding: $base-padding;
+  flex-grow: 2;
+  margin: 0.5em;
+  text-align: center;
+}
+
+
 
 .information-column {
   @include span-columns(5);
   position: absolute;
-  background-color: green;
+  background-color: $transparent-background;
   right: 0;
 }
