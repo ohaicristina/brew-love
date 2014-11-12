@@ -6,6 +6,7 @@
 
 @import "navigation";
 @import "fonts";
+@import "beer-menu";
 @import "onepager/sections";
 @import "onepager/landing";
 @import "onepager/offcanvas-styles";
@@ -25,11 +26,3 @@ p {
   @include outer-container;
   padding: 0 $base-padding;
 }
-
-
-.menu {
-  h1 {
-    padding-top: $base-padding * 8;
-  }
-}
-

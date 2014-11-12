@@ -1,0 +1,17 @@
+.menu {
+  h2 {
+    padding-top: $base-padding * 4;
+  }
+}
+
+.menu-column {
+  @include span-columns(7);
+  background-color: pink;
+}
+
+.information-column {
+  @include span-columns(5);
+  position: absolute;
+  background-color: green;
+  right: 0;
+}
