@@ -13,6 +13,11 @@
   }
 }
 
+.list-stack {
+  @include span-columns(4);
+  float: none;
+}
+
 .list-interactions {
   // position: relative;
 }
@@ -27,6 +32,7 @@
   .information-title {
     font-size: 1.2em;
     padding-bottom: $base-padding;
+    color: $water;
   }
 
   span {
@@ -58,10 +64,17 @@
   background-color: $malt;
   background-image:
   linear-gradient(
-  rgba(42, 42, 42, 0.60), 
-  rgba(42, 42, 42, 0.60)
+  rgba(42, 42, 42, 0.70), 
+  rgba(42, 42, 42, 0.70)
   ),
   url("../images/bg-malt.jpg");
+}
+
+
+.malt-active {
+  h3 {
+    color: $malt;
+  }
 }
 
 .hops {

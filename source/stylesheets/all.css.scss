@@ -17,6 +17,10 @@ body {
   color: $base-font-color;
 }
 
+p {
+  letter-spacing: .01em;
+}
+
 .page-wrapper {
   @include outer-container;
   padding: 0 $base-padding;
