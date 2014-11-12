@@ -11,11 +11,29 @@
   h3 {
     font-size: 1.2em;
   }
+
+  &:hover {
+    color: $water;
+  }
 }
 
 .list-stack {
   @include span-columns(4);
   float: none;
+  padding-bottom: $base-padding / 2;
+  cursor: pointer;
+
+  &:last-child {
+    padding-bottom: none;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  &:hover {
+    color: $malt;
+  }
 }
 
 .list-interactions {
@@ -24,6 +42,28 @@
 
 .section-information {
   @include span-columns(4);
+  background-color: $transparent-background;
+  padding: $base-padding * 2;
+  position: absolute;
+  right: 0;
+
+  .information-title {
+    font-size: 1.2em;
+    padding-bottom: $base-padding;
+    color: $water;
+  }
+
+  span {
+    font-weight: 600;
+  }
+  p {
+    font-weight: 300;
+    max-width: 350px;
+  }
+}
+
+.section-information-large {
+  @include span-columns(7);
   background-color: $transparent-background;
   padding: $base-padding * 2;
   position: absolute;
