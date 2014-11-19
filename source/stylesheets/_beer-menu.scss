@@ -44,6 +44,14 @@
   width: 160px;
 }
 
+.beer-link {
+  color: #FFFFFF;
+
+  &:hover {
+    color: darken(#FFFFFF, 20);
+  }
+}
+
 .information-column {
   @include span-columns(5);
   background-color: $transparent-background;
