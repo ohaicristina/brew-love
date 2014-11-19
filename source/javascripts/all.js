@@ -31,12 +31,12 @@ $(document).ready(function () {
       $.each(beers, function(i) {
         $(".lagers").append('<li class="menu-item-box">' + data.beers[i].name + '</li>');
       });
-      $.each(beers, function(i) {
-        $("#history").append("<p>" + data.beers[0].history + "</p>");
-        $("#color").append("<p>" + data.beers[0].color + "</p>");
-        $("#flavor").append("<p>" + data.beers[0].flavor + "</p>");
-        $("#hops").append("<p>" + data.beers[0].hops + "</p>");
-        $("#malt").append("<p>" + data.beers[0].malt + "</p>");
+      $.each(beers, function(b) {
+        $("#history").append("<p>" + data.beers[b].history + "</p>");
+        $("#color").append("<p>" + data.beers[b].color + "</p>");
+        $("#flavor").append("<p>" + data.beers[b].flavor + "</p>");
+        $("#hops").append("<p>" + data.beers[b].hops + "</p>");
+        $("#malt").append("<p>" + data.beers[b].malt + "</p>");
       });
         // $(".recommendations").append("<li>" + data.beers[0].reccomendation + "</li>");
 
