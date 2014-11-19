@@ -5,16 +5,19 @@
 }
 
 .offcanvas-menu {
-  width: 100%;
-  position: absolute;
+  position: fixed;
   background-color: $transparent-background;
-  border-top: 2px solid #E0AD3B;
-  padding-top: 3em;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-  -webkit-transform: translateY(133px);
-  transform: translateY(100%);
+}
+
+.oc-yeast {
+  border-top: 2px solid $yeast;
   bottom: 0;
+  padding-top: 3em;
+  width: 100%;
+  transform: translateY(100%);
+  -webkit-transform: translateY(100%);
 }
 
 .oc-heading {
@@ -44,6 +47,7 @@
 
 .mini-heading {
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 .x-trigger {
@@ -59,4 +63,10 @@
       opacity: 1;
     }
   }
+}
+
+.information-column {
+  border-left: 2px solid $yeast;
+  height: 100%;
+  margin-top: 54px;
 }

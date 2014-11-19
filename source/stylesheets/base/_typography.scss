@@ -86,3 +86,10 @@ cite {
     content: '\2014 \00A0';
   }
 }
+
+.uppercase-heading {
+    font-size: 1.5em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}

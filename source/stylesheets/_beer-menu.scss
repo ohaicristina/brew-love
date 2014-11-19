@@ -1,15 +1,15 @@
 // FIX THIS LATERR
-// .menu-wrapper {
-//   background-image:
-//   linear-gradient(
-//   rgba(42, 42, 42, 0.60),
-//   rgba(42, 42, 42, 0.60)
-//   ),
-//   url("../images/bg-yeast.jpg");
-//   background-attachment: fixed;
-//   -webkit-background-size: cover;
-//   background-size: cover;
-// }
+.menu-wrapper {
+  background-image:
+  linear-gradient(
+  rgba(42, 42, 42, 0.60),
+  rgba(42, 42, 42, 0.60)
+  ),
+  url("../images/bg_menu.jpg");
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
 
 .menu {
   h2 {
@@ -19,8 +19,10 @@
 
 .menu-column {
   @include span-columns(7);
-  border: 1px solid white;
-  margin-top: $base-padding * 5;
+  margin-top: $base-padding * 4;
+}
+
+.menu-section {
 }
 
 .menu-container {
@@ -36,11 +38,32 @@
   text-align: center;
 }
 
-
-
 .information-column {
   @include span-columns(5);
-  position: absolute;
   background-color: $transparent-background;
   right: 0;
+  padding: $base-padding 2.5em;
+
+  .type-heading {
+    font-size: 2em;
+  }
+
+  h2 {
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
+
+  .information {
+    @include row();
+    margin-top: 1.75em;
+
+    .full-width {
+      @include span-columns(12);
+    }
+
+    .half-width {
+      @include span-columns(5);
+    }
+  }
 }

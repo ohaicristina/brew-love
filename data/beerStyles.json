@@ -1,0 +1,24 @@
+{
+  "beers":[
+  {
+    "name":"Belgian",
+    "type":"Ale",
+    "history":"This is a tidbit about beer",
+    "color":"Amber",
+    "flavor":"smoky",
+    "hops":"lots",
+    "malt":"basic",
+    "recommendation":["Blue Moon", "Lagunitas", "One more"]
+  },
+  {
+    "name":"IPA",
+    "type":"Ale",
+    "history":"BLAHHHHHH",
+    "color":"BLUEBITCH",
+    "flavor":"yummy",
+    "hops":"none",
+    "malt":"bb",
+    "recommendation":["Blue Moon", "Lagunitas", "One more"]
+  }
+  ]
+}
