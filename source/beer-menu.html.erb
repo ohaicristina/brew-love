@@ -6,12 +6,11 @@ title: Beer Menu
   <div class="page-wrapper">
     <section class="menu">
       <div class="menu-column">
-        <div class="menu-section lagers">
+        <div class="menu-section">
           <h2 class="uppercase-heading">Lagers</h2>
-          <div class="menu-container">
-            <% 16.times do %>
-              <div class="menu-item-box">Style Name</div>
-          <% end %>
+          <div class="menu-container ">
+              <ul class="lagers">
+              </ul>
           </div>
         </div>
         <div class="menu-section">
@@ -39,29 +38,31 @@ title: Beer Menu
         </div>
         <div class="information">
           <ul class="characteristics">
-            <li class="characteristic full-width">
+            <li id="history" class="characteristic full-width">
               <span class="mini-heading">History &amp; Summary</span>
               <p>loremipsum</p>
             </li>
-            <li class="characteristic half-width">
+            <li id="color" class="characteristic half-width">
               <span class="mini-heading">Color</span>
               <p>loremipsum</p>
             </li>
-            <li class="characteristic half-width">
+            <li id="flavor" class="characteristic half-width">
               <span class="mini-heading">Flavor Notes</span>
               <p>loremipsum</p>
             </li>
-            <li class="characteristic half-width">
+            <li id="hops" class="characteristic half-width">
               <span class="mini-heading">Hops</span>
               <p>loremipsum</p>
             </li>
-            <li class="characteristic half-width">
+            <li id="malt" class="characteristic half-width">
               <span class="mini-heading">Malt</span>
               <p>loremipsum</p>
             </li>
-            <li class="characteristic full-width">
+            <li id="recommendation" class="characteristic full-width">
               <span class="mini-heading">Recommendations</span>
-              <p>loremipsum</p>
+              <ul class="Recommendations">
+                <li><p>Lagunitas</p></li>
+              </ul>
             </li>
           </ul>
         </div>
