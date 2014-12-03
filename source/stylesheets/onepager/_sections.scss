@@ -10,10 +10,10 @@
 
   h3 {
     font-size: 1.2em;
-  }
 
-  &:hover {
-    color: $water;
+    &:hover {
+      color: $water;
+    }
   }
 }
 
@@ -94,10 +94,22 @@
   url("../images/bg-water.jpg");
 }
 
-.water-active {
-  h3 {
-    color: $water;
+.water-drop {
+  svg {
+    height: 30px;
+
+    path {
+      fill: $water;
+    }
   }
+}
+
+.water-active {
+  color: $water;
+}
+
+.water-col {
+  color: #FFF;
 }
 
 .malt {

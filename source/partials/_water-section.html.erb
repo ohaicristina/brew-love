@@ -2,7 +2,7 @@
   <div class="page-wrapper">
     <div class="row">
       <div class="section-description">
-        <h2 class="section-title"><span class="section-title-i"></span>Water</h2>
+        <h2 class="section-title"><%= partial "partials/svg/water-drop" %>Water</h2>
         <p>Water can make or break your beer. Most breweries have their water
         filtration process down to a science whereas some smaller breweries let
         the local water shape the beer they brew. Since beer is about 90% water,
@@ -15,54 +15,55 @@
 
     <div class="row">
       <div class="list-interactions">
-        <ul class="section-list">
-          <li class="list-columns water-active">
-          <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
-          </div>
-          <h3>Carbonate (CO3) &amp; Bicarbonate (HCO3)</h3>
+        <ul id="water-list" class="section-list">
+          <li class="water-col list-columns">
+            <div class="list-svg">
+              <%# <%= partial "svg/carbonate-bicarbonate" %>
+            </div>
+            <h3 class="water-h3 water-active">Carbonate (CO<sub>3</sub>) &amp; Bicarbonate (HCO<sub>3</sub>)</h3>
           </li>
-          <li class="list-columns">
-          <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
-          </div>
-          <h3>Sodium (Na)</h3>
+          <li class="water-col list-columns">
+            <div class="list-svg">
+              <%# <%= partial "svg/carbonate-bicarbonate" %>
+            </div>
+            <h3 class="water-h3">Sodium (Na)</h3>
           </li>
-          <li class="list-columns">
-          <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
-          </div>
-          <h3>Chloride (Cl)</h3>
+          <li class="water-col list-columns">
+            <div class="list-svg">
+              <%# <%= partial "svg/carbonate-bicarbonate" %>
+            </div>
+            <h3 class="water-h3">Chloride (Cl)</h3>
           </li>
-          <li class="list-columns">
+          <li class="water-col list-columns">
           <div class="list-svg">
             <%# <%= partial "svg/carbonate-bicarbonate" %>
           </div>
-          <h3>Sulfate (SO4)</h3>
+          <h3>Sulfate (SO<sub>4</sub>)</h3>
           </li>
-          <li class="list-columns">
-          <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
-          </div>
-          <h3>Calcium (Ca)</h3>
+          <li class="water-col list-columns">
+            <div class="list-svg">
+              <%# <%= partial "svg/carbonate-bicarbonate" %>
+            </div>
+            <h3 class="water-h3">Calcium (Ca)</h3>
           </li>
-          <li class="list-columns">
-          <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
-          </div>
-          <h3>Magnesium (Mg)</h3>
+          <li class="water-col list-columns">
+            <div class="list-svg">
+              <%# <%= partial "svg/carbonate-bicarbonate" %>
+            </div>
+            <h3 class="water-h3">Magnesium (Mg)</h3>
           </li>
         </ul>
 
-        <div class="section-information">
-          <h4 class="information-title">Carbonate &amp; Bicarbonate</h4>
-          <span>Effects on brew</span>
-          <p>Determines the acidity of the mash and temporary hardness of the
-          water. If the levels are too high, the <a href="#">mash</a> becomes
-          too acidic. If the levels are too low, the efficiency of the mash
-          decreases.</p>
-          <span>What this means for you</span>
-          <p>Pre-boil your water, hoes.</p>
+        <div id="water-information" class="section-information">
+          <script id="water-template" type="x-handlebars-template">
+          {{#each this}}
+            <h4 class="information-title">{{title}}</h4>
+            // <span>Effects on brew</span>
+            // <p>{{effects}}</p>
+            // <span>What this means for you</span>
+            // <p>{{meaning}}</p>
+          {{/each}}
+          </script>
         </div>
       </div>
     </div>

@@ -1,26 +1,24 @@
 nav {
-  background-color: $body-background;
   position: fixed;
   width: 100%;
-  border-bottom: 1px solid white;
   z-index: 1;
 
   .navigation-format {
-    max-width: 80%;
+    float: right;
     height: 54px;
-    width: 85%;
     display: table;
     margin: 0 auto;
 
     .navigation-items {
       display: table-cell;
-      padding: 0 3em;
+      padding: 0 2em;
       vertical-align: middle;
+      background: $transparent-background;
 
       .nav-item {
         display: inline;
         color: white;
-        padding-right: 2em;
+        text-align: right;
       }
     }
   }
