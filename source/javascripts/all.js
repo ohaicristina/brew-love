@@ -80,14 +80,24 @@ $(document).ready(function () {
     //   })
     // });
   }
-});
 
-//Handlbars attempt eep.
-$(function  () {
-  var waterData = "data/waterProperties.json";
-   //Get the HTML from the template   in the script tag
-    var waterTemplateScript = $("#water-template").html();
-   //Compile the template
-    var waterTemplate = Handlebars.compile(waterTemplateScript);
-    $("#water-information").append(waterTemplate(waterData));
-});
+  //Handlbars attempt eep.
+
+  $(function() {
+
+    var source = $("#water-template").html();
+    var template = Handlebars.compile(source);
+    var data = 
+    //   $.getJSON("../data/waterProperties.json", function(data){
+    //   $.each(data.properties, function(i) {
+    //     $("#water-information").html(template(data));
+    // });
+  {properties: [
+    {title: "Dog", effects: "woof"},
+    {title: "Cat", effects: "meow"},
+    {title: "Cow", effects: "moo"}
+    ]};
+  $("#water-information").html(template(data));
+  });
+
+  });

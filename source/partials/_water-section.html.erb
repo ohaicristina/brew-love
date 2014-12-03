@@ -54,16 +54,17 @@
           </li>
         </ul>
 
-        <div id="water-information" class="section-information">
-          <script id="water-template" type="x-handlebars-template">
-          {{#each this}}
-            <h4 class="information-title">{{title}}</h4>
-            // <span>Effects on brew</span>
+        <script id="water-template" type="x-handlebars-template">
+          {{#each properties}}
+            <h4 class="information-title">{{ this.title }}</h4>
+            <span>Effects on brew</span>
             // <p>{{effects}}</p>
-            // <span>What this means for you</span>
+            <span>What this means for you</span>
             // <p>{{meaning}}</p>
           {{/each}}
-          </script>
+        </script>
+
+        <div id="water-information" class="section-information">
         </div>
       </div>
     </div>
