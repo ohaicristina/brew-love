@@ -81,23 +81,15 @@ $(document).ready(function () {
     // });
   }
 
-  //Handlbars attempt eep.
+  //Handlbars
 
+  //Render water properties template
   $(function() {
 
     var source = $("#water-template").html();
     var template = Handlebars.compile(source);
-    var data = 
-    //   $.getJSON("../data/waterProperties.json", function(data){
-    //   $.each(data.properties, function(i) {
-    //     $("#water-information").html(template(data));
-    // });
-  {properties: [
-    {title: "Dog", effects: "woof"},
-    {title: "Cat", effects: "meow"},
-    {title: "Cow", effects: "moo"}
-    ]};
-  $("#water-information").html(template(data));
+    var data = waterData;
+    $("#water-information").html(template(data));
   });
 
-  });
+});

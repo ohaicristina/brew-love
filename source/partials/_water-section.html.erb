@@ -55,13 +55,13 @@
         </ul>
 
         <script id="water-template" type="x-handlebars-template">
-          {{#each properties}}
-            <h4 class="information-title">{{ this.title }}</h4>
+          {{#with properties}}
+            <h4 class="information-title">{{ this.[0].title }}</h4>
             <span>Effects on brew</span>
-            // <p>{{effects}}</p>
+            <p>{{ this.[0].effects }}</p>
             <span>What this means for you</span>
-            // <p>{{meaning}}</p>
-          {{/each}}
+            <p>{{ this.[0].meaning }}</p>
+          {{/with}}
         </script>
 
         <div id="water-information" class="section-information">
