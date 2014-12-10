@@ -96,7 +96,7 @@
 
 .water-drop {
   svg {
-    height: 30px;
+    width: 25px;
 
     path {
       fill: $water;
@@ -122,6 +122,24 @@
   url("../images/bg-malt.jpg");
 }
 
+.ic-section-heading {
+  position: relative;
+
+  svg {
+    position: absolute;
+    left: -45px;
+  }
+}
+
+.malt-branch {
+  svg {
+    width: 30px;
+
+    path {
+      fill: $malt;
+    }
+  }
+}
 
 .malt-active {
   h3 {
@@ -139,6 +157,16 @@
   url("../images/bg-hops.jpg");
 }
 
+.hops-nug {
+  svg {
+    width: 30px;
+
+    path {
+      fill: $hops;
+    }
+  }
+}
+
 .yeast {
   background-color: $yeast;
   background-image:
@@ -149,6 +177,11 @@
   url("../images/bg-yeast.jpg");
 }
 
+.yeast-particles {
+  svg {
+    width: 35px;
+  }
+}
 
 .type-container {
   @include clearfix;
@@ -175,7 +208,8 @@
 }
 
 
-.tall-glass {
+.tall-glass,
+.round-glass {
   padding-top: 2em;
   margin: 0 auto;
 
