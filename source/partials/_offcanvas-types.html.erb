@@ -1,51 +1,217 @@
-<div class="offcanvas-menu oc-yeast">
+<!-- Lager Offcanvas -->
+<div id="lager-offcanvas-menu" class="offcanvas-menu oc-yeast">
   <div class="page-wrapper">
-    <span class="x-trigger show-offcanvas"><%= partial "partials/svg/x" %></span>
+    <%= partial "partials/svg/x" %>
     <h3 class="oc-heading">Stop. Lager time.</h3>
     <div class="row">
       <div class="oc-information">
-        <p class="definition">
+        <div class="oc-summary">
           <span class="mini-heading">What makes a lager, a lager?</span>
-          <br>
+          <p class="mini-body">
           Lager beers use bottom fermenting yeast and are brewed in cool
           temperatures. The cooler temperature slows down the activity of the
           yeast and requires a longer aging time.
-        </p>
-        <div class="characteristics">
+          </p>
+        </div>
+        <div class="oc-characteristics">
           <span class="mini-heading">Characteristics</span>
-          <ul class="characteristic-list">
+          <ul class="mini-body characteristic-list">
             <li class="characteristic">Lighter tasting</li>
-            <li class="characteristic">Tend to be highly carbonated or crisp</li>
-            <li class="characteristic">Tend to be smooth and mellow</li>
+            <li class="characteristic">Highly carbonated or crisp</li>
+            <li class="characteristic">Smooth and mellow</li>
             <li class="characteristic">Have a subtle, clean, balanced taste and aroma</li>
-            <li class="characteristic">Served at cooler temperatures (38–45 F)</li>
+            <li class="characteristic">Ferment at cooler temperatures (38–45 F)</li>
+          </ul>
+        </div>
+        <div class="oc-example-beers">
+          <span class="mini-heading">Common Lager Beers</span>
+          <ul class="beer-list">
+            <li class="beers">
+            <a href="https://www.samueladams.com/craft-beers/boston-lager" target="_blank">
+              Samuel Adams Boston Lager</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.yuengling.com/our_beer/" target="_blank">Yuengling Traditional Lager</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.narragansettbeer.com/beers/lager?age-verified=7568a4241c" target="_blank">Narragansett Lager</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.stellaartois.com/en/global/home" target="_blank">Stella Artois</a>
+            </li>
+            <li class="beers">
+            <a href="http://pabstblueribbon.com/products/" target="_blank">Pabst Blue Ribbon</a>
+            </li>
+            <li class="beers">
+            <a href="http://brooklynbrewery.com/brooklyn-beers/perennial-brews/brooklyn-lager" target="_blank">Brooklyn Lager</a>
+            </li>
           </ul>
         </div>
       </div>
+    </div>
+    <div class="row">
       <div class="oc-styles">
         <h4 class="oc-heading">Styles of Lagers</h4>
-        <ul class="style-list">
-          <li class="styles"><a href="">Pilsner</a></li>
-          <li class="styles"><a href="">American Pilsner</a></li>
-          <li class="styles"><a href="">Bock</a></li>
-          <li class="styles"><a href="">Munich Lager</a></li>
-          <li class="styles"><a href="">European Lager</a></li>
-          <li class="styles"><a href="">American Lager</a></li>
-          <li class="styles"><a href="">American Adjunct Lager</a></li>
-          <li class="styles"><a href="">German Lager</a></li>
+        <ul class="style-list lager-list">
+          <li class="menu-item-box"><a href="">Pilsner</a></li>
+          <li class="menu-item-box"><a href="">American Pilsner</a></li>
+          <li class="menu-item-box"><a href="">Bock</a></li>
+          <li class="menu-item-box"><a href="">Munich Lager</a></li>
+          <li class="menu-item-box"><a href="">European Lager</a></li>
+          <li class="menu-item-box"><a href="">American Lager</a></li>
+          <li class="menu-item-box"><a href="">American Adjunct Lager</a></li>
+          <li class="menu-item-box"><a href="">German Lager</a></li>
         </ul>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Ale Off Canvas -->
+<div id="ale-offcanvas-menu" class="offcanvas-menu oc-yeast">
+  <div class="page-wrapper">
+    <span class="x-trigger show-offcanvas"><%= partial "partials/svg/x" %></span>
+    <h3 class="oc-heading">What Ales you, good sir?</h3>
     <div class="row">
-      <div class="oc-example-beers">
-        <h4 class="oc-heading">Common Lager Beers</h4>
-        <ul class="beer-list">
-          <li class="beers"></li>
-          <li class="beers"></li>
-          <li class="beers"></li>
-          <li class="beers"></li>
-          <li class="beers"></li>
-          <li class="beers"></li>
+      <div class="oc-information">
+        <div class="oc-summary">
+          <span class="mini-heading">What makes an ale, an ale?</span>
+          <p class="mini-body">
+          Ales use top fermenting yeasts and are fermented at warmer
+          temperatures. In this way, the yeast remains active and the
+          fermentation process is much shorter. Ales date back to pre-historic
+          times and were often thick and gruel-like. Archaelogists determined
+          that people usedto drink from communal bowls with straws.
+          </p>
+        </div>
+        <div class="oc-characteristics">
+          <span class="mini-heading">Characteristics</span>
+          <ul class="mini-body characteristic-list">
+            <li class="characteristic">More prominent malty and hoppy taste</li>
+            <li class="characteristic">Traits are often dependent on where the style originated from.</li>
+            <li class="characteristic">A fruity aroma and palette</li>
+            <li class="characteristic">Ferment at warmer temperatures (55-70 F)</li>
+          </ul>
+        </div>
+        <div class="oc-example-beers">
+          <span class="mini-heading">Common Ale Beers</span>
+          <ul class="beer-list">
+            <li class="beers">
+            <a href="http://www.allagash.com/beer/year-round/white" target="_blank">
+              Allagash</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.victorybeer.com/beers/golden-monkey/" target="_blank">Victory Golden Monkey</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.harpoonbrewery.com/beer/10/ufo-white" target="_blank">Harpoon UFO</a>
+            </li>
+            <li class="beers">
+            <a href="http://lagunitas.com/beers/ipa/#" target="_blank">Lagunitas IPA</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.guinness.com/en-us/thebeer-draught.html" target="_blank">Guinnness Darught</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.bluemoonbrewingcompany.com/OurBeers/Product/belgian-white-belgian-style-wheat-ale" target="_blank">Blue Moon</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.magichat.net/elixirs/9/" target="_blank">Magic Hat #9</a>
+            </li>
+            <li class="beers">
+            <a href="http://ciscobrewers.com/beer/whales-tale-pale-ale" target="_blank">Whale's Tale Pale Ale</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="oc-styles">
+        <h4 class="oc-heading">Styles of Lagers</h4>
+        <ul class="style-list lager-list">
+          <li class="menu-item-box"><a href="">Irish Ale</a></li>
+          <li class="menu-item-box"><a href="">Stouts &amp; Porters</a></li>
+          <li class="menu-item-box"><a href="">German Ale</a></li>
+          <li class="menu-item-box"><a href="">Weisbeer</a></li>
+          <li class="menu-item-box"><a href="">English Pale Ale</a></li>
+          <li class="menu-item-box"><a href="">American Pale Ale</a></li>
+          <li class="menu-item-box"><a href="">Brown Ale</a></li>
+          <li class="menu-item-box"><a href="">Mild Ale</a></li>
+          <li class="menu-item-box"><a href="">American Wild Ale</a></li>
+          <li class="menu-item-box"><a href="">Raggenbier</a></li>
+          <li class="menu-item-box"><a href="">India Pale Ale (IPA)</a></li>
+          <li class="menu-item-box"><a href="">Strong Pale Ale</a></li>
+          <li class="menu-item-box"><a href="">Belgian French Ale</a></li>
+          <li class="menu-item-box"><a href="">Belgian Dark Ale</a></li>
+          <li class="menu-item-box"><a href="">Belgian Strong Pale Ale</a></li>
+          <li class="menu-item-box"><a href="">Pale Ale</a></li>
+          <li class="menu-item-box"><a href="">Double IPA</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hybrid Off Canvas -->
+<div id="hybrid-offcanvas-menu" class="offcanvas-menu oc-yeast">
+  <div class="page-wrapper">
+    <span class="x-trigger show-offcanvas"><%= partial "partials/svg/x" %></span>
+    <h3 class="oc-heading">Hybrids (Better than a Prius).</h3>
+    <div class="row">
+      <div class="oc-information">
+        <div class="oc-summary">
+          <span class="mini-heading">The Inbetweeners</span>
+          <p class="mini-body">
+          A hybrid beer is either a beer fermented with lager yeast at warm
+          (ale) temperatures or a beer fermented with ale yeast at cool (lager)
+          temperatures. These beers are a breed of their own. Brewers have their
+          own ways of creating the brew's characteristics through exact lengths
+          and temperatures of fermentation.
+          </p>
+        </div>
+        <div class="oc-characteristics">
+          <span class="mini-heading">Characteristics</span>
+          <ul class="mini-body characteristic-list">
+            <li class="characteristic">Warm fermented ale yeasts produce fruit flavors and fruity/floral esters (aromas)</li>
+            <li class="characteristic">Cold fermented ale yeasts produce less esters and results in a more refined beer reminiscent of a lager</li>
+            <li class="characteristic">Characteristics tend to be dependent on the style of beer</li>
+        </ul>
+        </div>
+        <div class="oc-example-beers">
+          <span class="mini-heading">Common Lager Beers</span>
+          <ul class="beer-list">
+            <li class="beers">
+            <a href="http://www.anchorbrewing.com/beer/anchor_steam" target="_blank">Anchor Steam</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.harpoonbrewery.com/beer/11/summer-beer" target="_blank">Harpoon Summer</a>
+            </li>
+            <li class="beers">
+            <a href="http://sixpoint.com/beers/core/sweetaction" target="_blank">Sixpoint Sweet Action</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.cantillon.be/br/3_111" target="_blank">Cantillon</a>
+            </li>
+            <li class="beers">
+            <a href="http://longtrail.com/beers/long-trail-ale" target="_blank">Long Trail Ale</a>
+            </li>
+            <li class="beers">
+            <a href="http://www.capeannbrewing.com/fishermans-ale/" target="_blank">Cape Ann Fisherman's Ale</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="oc-styles">
+        <h4 class="oc-heading">Styles of Lagers</h4>
+        <ul class="style-list lager-list">
+          <li class="menu-item-box"><a href="">Cream Ale</a></li>
+          <li class="menu-item-box"><a href="">Kolsch</a></li>
+          <li class="menu-item-box"><a href="">Altbier</a></li>
+          <li class="menu-item-box"><a href="">California Common/Steam</a></li>
+          <li class="menu-item-box"><a href="">Baltic Porter</a></li>
+          <li class="menu-item-box"><a href="">Lambic</a></li>
         </ul>
       </div>
     </div>

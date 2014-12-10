@@ -18,37 +18,37 @@
         <ul id="water-list" class="section-list">
           <li class="water-col list-columns">
             <div class="list-svg">
-              <%# <%= partial "svg/carbonate-bicarbonate" %>
+              <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
             </div>
             <h3 class="water-h3 water-active">Carbonate (CO<sub>3</sub>) &amp; Bicarbonate (HCO<sub>3</sub>)</h3>
           </li>
           <li class="water-col list-columns">
             <div class="list-svg">
-              <%# <%= partial "svg/carbonate-bicarbonate" %>
+              <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
             </div>
             <h3 class="water-h3">Sodium (Na)</h3>
           </li>
           <li class="water-col list-columns">
             <div class="list-svg">
-              <%# <%= partial "svg/carbonate-bicarbonate" %>
+              <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
             </div>
             <h3 class="water-h3">Chloride (Cl)</h3>
           </li>
           <li class="water-col list-columns">
           <div class="list-svg">
-            <%# <%= partial "svg/carbonate-bicarbonate" %>
+            <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
           </div>
           <h3>Sulfate (SO<sub>4</sub>)</h3>
           </li>
           <li class="water-col list-columns">
             <div class="list-svg">
-              <%# <%= partial "svg/carbonate-bicarbonate" %>
+              <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
             </div>
             <h3 class="water-h3">Calcium (Ca)</h3>
           </li>
           <li class="water-col list-columns">
             <div class="list-svg">
-              <%# <%= partial "svg/carbonate-bicarbonate" %>
+              <%# <%= partial "partials/svg/carbonate-bicarbonate" %>
             </div>
             <h3 class="water-h3">Magnesium (Mg)</h3>
           </li>
@@ -57,10 +57,10 @@
         <script id="water-template" type="x-handlebars-template">
           {{#with properties}}
             <h4 class="information-title">{{ this.[0].title }}</h4>
-            <span>Effects on brew</span>
-            <p>{{ this.[0].effects }}</p>
-            <span>What this means for you</span>
-            <p>{{ this.[0].meaning }}</p>
+            <span class="mini-heading">Effects on brew</span>
+            <p class="mini-body">{{ this.[0].effects }}</p>
+            <span class="mini-heading">What this means for you</span>
+            <p class="mini-body">{{ this.[0].meaning }}</p>
           {{/with}}
         </script>
 

@@ -6,6 +6,7 @@
 $(document).ready(function () {
   console.log("Testing123");
   listBeers();
+  toggleOffCanvas();
 
 
 
@@ -23,22 +24,47 @@ $(document).ready(function () {
     });
   }
 
-  //Off-canvas toggle
-  $(function() {
-    $('.show-offcanvas').click(function() {
-      toggleOffCanvas();
-    });
-  });
-
+  //Off-canvas toggles
   function toggleOffCanvas() {
-    if ($('.offcanvas-menu').hasClass('show-nav')) {
-      $('.offcanvas-menu').removeClass('show-nav');
-      $('body').css('overflow', 'auto');
-    } else {
-      $('.offcanvas-menu').addClass('show-nav');
-      $('body').css('overflow', 'hidden');
-    }
+    $('.show-offcanvas').click(function() {
+      if($(this).is('#lager-trigger')) {
+        showLagerOffCanvas();
+      }
+      else if($(this).is('#ale-trigger')) {
+        showAleOffCanvas();
+      }
+      else if($(this).is('#hybrid-trigger')) {
+        showHybridOffCanvas();
+      }
+      else {
+        console.log('xtrigger');
+      };
+    });
+
+    $('.x-trigger').click(function() {
+      if($('.offcanvas-menu').hasClass('show-nav')) {
+        $('.offcanvas-menu').removeClass('show-nav');
+        $('body').css('overflow', 'auto');
+      };
+    });
+
   }
+
+  function showLagerOffCanvas() {
+      $('#lager-offcanvas-menu').addClass('show-nav');
+      $('body').css('overflow', 'hidden');
+  }
+
+  function showAleOffCanvas() {
+      $('#ale-offcanvas-menu').addClass('show-nav');
+      $('body').css('overflow', 'hidden');
+  }
+
+  function showHybridOffCanvas() {
+      $('#hybrid-offcanvas-menu').addClass('show-nav');
+      $('body').css('overflow', 'hidden');
+  }
+
 
   //Beer Menu Function
   function listBeers() {

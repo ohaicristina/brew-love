@@ -9,6 +9,7 @@
   background-color: $transparent-background;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
+  overflow: scroll;
 }
 
 .oc-yeast {
@@ -26,16 +27,21 @@
 
 .row {
   @include row;
-  padding-bottom: $base-padding * 2;
+  padding-bottom: $base-padding * 3;
 }
 
 .oc-information {
-  @include span-columns(5);
+  @include span-columns(12);
+
+  .oc-summary,
+  .oc-characteristics,
+  .oc-example-beers {
+    @include span-columns(4);
+  }
 }
 
 .oc-styles {
-  @include span-columns(4);
-  @include shift(3);
+  @include span-columns(12);
 }
 
 .show-nav {
@@ -47,13 +53,28 @@
 
 .mini-heading {
   font-weight: 600;
-  font-size: 1.2em;
+  padding-bottom: $base-padding / 2;
+  display: block;
+}
+
+.mini-body {
+  font-weight: 300;
+}
+
+.characteristic,
+.beers {
+  padding-bottom: $base-padding / 3;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .x-trigger {
-  position: absolute;
+  position: fixed;
   cursor: pointer;
   right: 0;
+  padding-right: $base-padding * 3;
 
   svg {
     fill: #FFFFFF;
@@ -65,8 +86,8 @@
   }
 }
 
-.information-column {
-  border-left: 2px solid $yeast;
-  height: 100%;
-  margin-top: 54px;
+.style-list {
+  li {
+    display: inline-block;
+  }
 }

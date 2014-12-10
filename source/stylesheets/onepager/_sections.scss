@@ -36,9 +36,6 @@
   }
 }
 
-.list-interactions {
-  // position: relative;
-}
 
 .section-information {
   @include span-columns(4);
@@ -53,11 +50,7 @@
     color: $water;
   }
 
-  span {
-    font-weight: 600;
-  }
   p {
-    font-weight: 300;
     max-width: 350px;
   }
 }
@@ -209,7 +202,8 @@
 
 
 .tall-glass,
-.round-glass {
+.round-glass,
+.fancy-glass {
   padding-top: 2em;
   margin: 0 auto;
 

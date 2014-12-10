@@ -2,29 +2,36 @@
   <div class="page-wrapper">
     <div class="content">
       <div class="row">
-        <div class="section-info">
+        <div class="section-description">
           <h2 class="section-title"><%= partial "partials/svg/yeast" %>Yeast</h2>
-          <p>Here's some loremipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin erat nisl, porta in nibh imperdiet, facilisis sagittis diam. Cras eu ultrices ipsum. Nullam fermentum consectetur neque quis tristique dunt dapibus lacus, eget finibus urna mollis id. Cras eu ultrices ipsum. Nullam fermentum consectetur.</p>
+          <p>Yeast is what determines if a beer is an Ale, a Lager or something
+          more complex. The importance of yeast cannot be overlooked. If there
+          is a change in the yeast the brewer is using, it can result in
+          vinegary or other unpleasant flavors in the beer. For this reason,
+          breweries will keep their process and equipment "hospital-clean". A
+          brewers yeast strain acts as a fingerprint for the beer.
+          </p>
         </div>
       </div>
       <div class="type-container">
         <ul class="beer-types">
           <li class="type">
           <h3>Lager</h3>
-            <div class="show-offcanvas" id="#lager-trigger">
-            <%= partial "partials/svg/tall-glass" %>
-            <span>+ Learn More</span></div>
+            <div id="lager-trigger" class="show-offcanvas">
+              <%= partial "partials/svg/tall-glass" %>
+              <span>+ Learn More</span>
+            </div>
           </li>
           <li class="type">
           <h3>Ale</h3>
-          <div class="show-offcanvas" id="#ale-trigger">
+          <div id="ale-trigger" class="show-offcanvas">
             <%= partial "partials/svg/round-glass" %>
             <span>+ Learn More</span></div>
           </li>
           <li class="type">
             <h3>Hybrid</h3>
-            <div class="show-offcanvas" id="#hybrid-trigger">
-              <%= partial "partials/svg/tall-glass" %>
+            <div id="hybrid-trigger" class="show-offcanvas">
+              <%= partial "partials/svg/fancy-glass" %>
               <span>+ Learn More</span>
             </div>
           </li>
