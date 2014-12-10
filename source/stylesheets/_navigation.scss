@@ -1,25 +1,54 @@
-nav {
+nav#site-nav {
   position: fixed;
+  right: 0;
+  top: 0;
+  padding: $base-padding;
+  z-index: 2;
+}
+
+nav#ingredients-nav {
+  position: relative;
   width: 100%;
   z-index: 1;
+  background: $transparent-background;
+  padding: 1em 0;
+}
 
-  .navigation-format {
-    float: right;
-    height: 54px;
-    display: table;
-    margin: 0 auto;
+.ingredients-list {
+  font-family: $header-font-family;
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  font-size: 1.2em;
 
-    .navigation-items {
-      display: table-cell;
-      padding: 0 2em;
-      vertical-align: middle;
-      background: $transparent-background;
+  .ingredient-section-item {
+    color: white;
+    text-align: center;
+    flex-grow: 1;
 
-      .nav-item {
-        display: inline;
-        color: white;
-        text-align: right;
-      }
+    a {
+      color: #FFF;
     }
   }
+
+  .water-active a {
+    color: $water !important;
+  }
+
+  .malt-active a {
+    color: $malt !important;
+  }
+
+  .hops-active a {
+    color: $hops !important;
+  }
+
+  .yeast-active a {
+    color: $yeast !important;
+  }
+}
+
+.affix {
+  position: fixed !important;
+  top: 0;
 }

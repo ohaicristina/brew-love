@@ -1,21 +1,86 @@
 //= require jquery
+//= reqire waypoints.min.js
+//= require smooth-scroll.js
 //= require jquery.smoothState.js
 //= require handlebars-v2.0.0.js
 //= require_tree .
 
 $(document).ready(function () {
-  console.log("Testing123");
   listBeers();
   toggleOffCanvas();
+  affixNav();
+  smoothScroll.init();
 
-
-
-  //Active class toggle
+  //Water Active class toggle on click
   $(function() {
     $('.water-col').click(function() {
       toggleWaterActive();
     });
   });
+
+  // Affix ingredient nav
+  function affixNav() {
+    var navHeight = $('#ingredients-nav').outerHeight();
+
+    $(window).scroll(function(){
+      var navTop = $(window).scrollTop();
+
+      if (navTop > 435) {
+        $('#ingredients-nav').addClass('affix');
+      }
+      else {
+        $('#ingredients-nav').removeClass('affix');
+      }
+    });
+
+    $('.landing').waypoint(function() {
+      $('#water-ing').removeClass('water-active');
+      $('#malt-ing').removeClass('malt-active');
+      $('#hops-ing').removeClass('hops-active');
+      $('#yeast-ing').removeClass('yeast-active');
+    });
+
+    $('.water').waypoint(function() {
+      $('#water-ing').addClass('water-active');
+      $('#malt-ing').removeClass('malt-active');
+      $('#hops-ing').removeClass('hops-active');
+      $('#yeast-ing').removeClass('yeast-active');
+    },
+    {
+      offset: navHeight
+    });
+
+    $('.malt').waypoint(function() {
+      $('#water-ing').removeClass('water-active');
+      $('#malt-ing').addClass('malt-active');
+      $('#hops-ing').removeClass('hops-active');
+      $('#yeast-ing').removeClass('yeast-active');
+    },
+    {
+      offset: navHeight
+    });
+
+    $('.hops').waypoint(function() {
+      $('#water-ing').removeClass('water-active');
+      $('#malt-ing').removeClass('malt-active');
+      $('#hops-ing').addClass('hops-active');
+      $('#yeast-ing').removeClass('yeast-active');
+    },
+    {
+      offset: navHeight
+    });
+
+    $('.yeast').waypoint(function() {
+      $('#water-ing').removeClass('water-active');
+      $('#malt-ing').removeClass('malt-active');
+      $('#hops-ing').removeClass('hops-active');
+      $('#yeast-ing').addClass('yeast-active');
+    },
+    {
+      offset: navHeight
+    });
+  }
+
 
   function toggleWaterActive() {
     var $waterh3 = $('.water-col h3').click(function(){
@@ -47,22 +112,21 @@ $(document).ready(function () {
         $('body').css('overflow', 'auto');
       };
     });
-
   }
 
   function showLagerOffCanvas() {
-      $('#lager-offcanvas-menu').addClass('show-nav');
-      $('body').css('overflow', 'hidden');
+    $('#lager-offcanvas-menu').addClass('show-nav');
+    $('body').css('overflow', 'hidden');
   }
 
   function showAleOffCanvas() {
-      $('#ale-offcanvas-menu').addClass('show-nav');
-      $('body').css('overflow', 'hidden');
+    $('#ale-offcanvas-menu').addClass('show-nav');
+    $('body').css('overflow', 'hidden');
   }
 
   function showHybridOffCanvas() {
-      $('#hybrid-offcanvas-menu').addClass('show-nav');
-      $('body').css('overflow', 'hidden');
+    $('#hybrid-offcanvas-menu').addClass('show-nav');
+    $('body').css('overflow', 'hidden');
   }
 
 
@@ -75,38 +139,50 @@ $(document).ready(function () {
       $(".characteristic p").remove();
 
       $.each(beers, function(i) {
-        $(".lagers").append('<a class="beer-link" href="#"  id="link"><li class="menu-item-box">' + data.beers[i].name + '</li></a>');
+        var currentName =  data.beers[i].name;
+        var currentID = data.beers[i].id;
+
+        $(".lagers").append('<a class="beer-link" href="#'+ currentName + '" id="'+ currentID + '"><li class="menu-item-box">' + data.beers[currentID].name + '</li></a>');
       });
 
-      $.each(beers, function(b) {
-        $("#history").append("<p>" + data.beers[b].history + "</p>");
+      $('.beer-link').click(function() {
+        var currentArrayID = $(this).attr('id');
+        // var currentBeerObject = data.beers[currentArrayID].id;
+        $(".characteristic p").remove();
+
+        // $.each(beers, function(b) {
+        //   var currentBeerID = data.beers[b].id;
+
+        $("#history").append("<p>" + data.beers[currentArrayID].history + "</p>");
         $("#color").append("<p>" + data.beers[b].color + "</p>");
         $("#flavor").append("<p>" + data.beers[b].flavor + "</p>");
         $("#hops").append("<p>" + data.beers[b].hops + "</p>");
         $("#malt").append("<p>" + data.beers[b].malt + "</p>");
         // $(".recommendations").append("<li>" + data.beers[0].reccomendation + "</li>");
       });
-      $('#link').click(function() {
-        window.history.pushState('obj', 'newtitle', '/belgian');
-        return false;
-      });
+
+      // $('.beer-link').click(function() {
+      //   var currentID = $(this).attr('id');
+      //
+      //   window.history.pushState('obj', 'newtitle', currentID);
+      //   return false;
+      // });
 
     });
-
-
-
-    // .done(function(data) {
-    //   $("li").each(function(i) {
-    //     if ($(this).attr("data-score") >= 0.8) {
-    //       $(this).addClass("redcircle");
-    //     }
-    //     else {
-    //       $(this).addClass("bluetext");
-    //     }
-    //   })
-    // });
   }
 
+
+
+  // .done(function(data) {
+  //   $("li").each(function(i) {
+  //     if ($(this).attr("data-score") >= 0.8) {
+  //       $(this).addClass("redcircle");
+  //     }
+  //     else {
+  //       $(this).addClass("bluetext");
+  //     }
+  //   })
+  // });
   //Handlbars
 
   //Render water properties template
@@ -117,5 +193,4 @@ $(document).ready(function () {
     var data = waterData;
     $("#water-information").html(template(data));
   });
-
-});
+ });

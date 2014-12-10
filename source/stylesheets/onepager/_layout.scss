@@ -1,9 +1,5 @@
-.site-canvas {
-  // margin-top: 8em;
-}
-
 .page-section {
-  padding: 4em 0 2em;
+  padding: 8em 0 4em;
   height: 800px;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -27,6 +23,4 @@
   padding-bottom: $base-padding / 4;
 }
 
-.ingredient-column {
-  @include span-columns(3);
-}
+

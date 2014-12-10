@@ -2,6 +2,7 @@
 title: Brew Love
 ---
 
+  <%= partial "partials/site-navigation" %>
     <header class="landing">
       <div class="page-wrapper">
         <h1 class="landing-header">
@@ -18,27 +19,7 @@ title: Brew Love
       </div>
     </header>
 
-    <section class="page-section ingredients">
-      <div class="page-wrapper">
-        <h2 class="section-title">Ingredients</h2>
-        <div class="ingredient-column">
-          <h5 class="section-subheader">Beer is mostly water</h5>
-          <p>Water can make or break your beer. Most breweries have their water filtration process down to a science whereas some smalled breweries let the local water shape the beer they brew.</p>
-        </div>
-        <div class="ingredient-column">
-          <h5 class="section-subheader">Malty malty malt malt</h5>
-          <p>Malt is made from soaking cereal grains in water until they’ve germinated and then dried. The type of malt used affects the <a href="#">color</a>, <a href="#">flavor</a>, and <a href="#">mouthfeel</a> of the beer. Click on a type of malt below to find out what kind of malt your favorite beers are using. </p>
-        </div>
-        <div class="ingredient-column">
-          <h5 class="section-subheader">"I heard they recently decided to add more HOPS to it."</h5>
-          <p>Lorem ipsum dolor set amet</p>
-        </div>
-        <div class="ingredient-column">
-          <h5 class="section-subheader">It's in the yeast</h5>
-          <p>Lorem ipsum dolor set amet</p>
-        </div>
-      </div>
-    </section>
+    <%= partial "partials/ingredients-navigation" %>
     <%= partial "partials/water-section" %>
     <%= partial "partials/malt-section" %>
     <%= partial "partials/hops-section" %>

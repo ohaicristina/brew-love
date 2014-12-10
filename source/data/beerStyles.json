@@ -1,6 +1,7 @@
 {
   "beers":[
   {
+    "id": "0",
     "name":"Belgian",
     "type":"Ale",
     "history":"This is a tidbit about beer",
@@ -11,6 +12,7 @@
     "recommendation":["Blue Moon", "Lagunitas", "One more"]
   },
   {
+    "id": "1",
     "name":"IPA",
     "type":"Ale",
     "history":"BLAHHHHHH",
