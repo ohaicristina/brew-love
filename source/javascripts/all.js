@@ -147,18 +147,16 @@ $(document).ready(function () {
 
       $('.beer-link').click(function() {
         var currentArrayID = $(this).attr('id');
-        // var currentBeerObject = data.beers[currentArrayID].id;
         $(".characteristic p").remove();
+        $(".characteristic li").remove();
 
-        // $.each(beers, function(b) {
-        //   var currentBeerID = data.beers[b].id;
 
         $("#history").append("<p>" + data.beers[currentArrayID].history + "</p>");
-        $("#color").append("<p>" + data.beers[b].color + "</p>");
-        $("#flavor").append("<p>" + data.beers[b].flavor + "</p>");
-        $("#hops").append("<p>" + data.beers[b].hops + "</p>");
-        $("#malt").append("<p>" + data.beers[b].malt + "</p>");
-        // $(".recommendations").append("<li>" + data.beers[0].reccomendation + "</li>");
+        $("#color").append("<p>" + data.beers[currentArrayID].color + "</p>");
+        $("#flavor").append("<p>" + data.beers[currentArrayID].flavor + "</p>");
+        $("#hops").append("<p>" + data.beers[currentArrayID].hops + "</p>");
+        $("#malt").append("<p>" + data.beers[currentArrayID].malt + "</p>");
+        $(".recommendations").append("<li>" + data.beers[currentArrayID].recommendation + "</li>");
       });
 
       // $('.beer-link').click(function() {
