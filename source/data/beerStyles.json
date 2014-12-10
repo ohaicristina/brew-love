@@ -2,25 +2,58 @@
   "beers":[
   {
     "id": "0",
-    "name":"Belgian",
-    "type":"Ale",
-    "history":"This is a tidbit about beer",
-    "color":"Amber",
-    "flavor":"smoky",
-    "hops":"lots",
-    "malt":"basic",
-    "recommendation":["Blue Moon", "Lagunitas", "One more"]
+    "name":"Czech Pilsner",
+    "type":"Lager",
+    "history":"Also known as Bohemian Pilsners, Pilsner beer was first brewed back in the 1840's in Czechoslovakia, but nowadays you can find Belgian, German and American varieties. Pilsners are known to be extremely refreshing and easy to drink.",
+    "color":"Light straw to light golden",
+    "flavor":"Smooth, crisp, clean and malty",
+    "hops":"Spicy, bitter, floral",
+    "malt":"Basic",
+    "recommendation":["Pilsner Urquell", "Lagunitas PILS", "Narragansett Bohemian Pilsner"]
   },
   {
     "id": "1",
-    "name":"IPA",
-    "type":"Ale",
-    "history":"BLAHHHHHH",
-    "color":"BLUEBITCH",
-    "flavor":"yummy",
-    "hops":"none",
-    "malt":"bb",
-    "recommendation":["Blue Moon", "Lagunitas", "One more"]
+    "name":"American Adjunct Lager",
+    "type":"Lager",
+    "history":"After prohibition ended in America, large macro-breweries created these light-bodied, pale, fizzy lagers meant for mass-consumption and production. Favorite among college students and grumpy old men alike.",
+    "color":"Pale yellow",
+    "flavor":"Regret and frat parties",
+    "hops":"Low bitterness",
+    "malt":"Basic, thin, typically using low cost cereal grains",
+    "recommendation":["Budweiser", "PBR", "Miller High Life"]
+  },
+  {
+    "id": "2",
+    "name":"Munich Lager",
+    "type":"Lager",
+    "history":"The Germans answer to the Czech Pilsner to keep up with demand in the 1800's. Very similar to the spicy hops of the Pilsner, but a bit more malty.",
+    "color":"Light straw to light golden",
+    "flavor":"Smooth, crisp, clean and malty",
+    "hops":"Spicy, but balanced",
+    "malt":"Basic, but enough to balance the hops",
+    "recommendation":["Weihenstephaner Original", "Victory Lager", "Summer Helles"]
+  },
+  {
+    "id": "3",
+    "name":"American Double/Imperial Pilsner",
+    "type":"Lager",
+    "history":"Similar to the classic Czech pilsner, but with a good ol' 'MURICA twist. Expect a more bitter, malty and alcoholic beer.",
+    "color":"Light straw to light golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
+  },
+  {
+    "id": "4",
+    "name":"European Lager",
+    "type":"Lager",
+    "history":"The Germans weren't the only ones who thought they needed a beer of their own in the 1800's. Inspired by the Czech Pilsners as well, but they tend to be more malt based and less bitter",
+    "color":"Pale straw to pale golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
   }
   ]
 }

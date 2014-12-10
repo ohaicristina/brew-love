@@ -19,7 +19,6 @@
 
 .menu-column {
   @include span-columns(7);
-  margin-top: $base-padding * 4;
 }
 
 .menu-section {

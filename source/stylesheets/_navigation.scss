@@ -1,9 +1,42 @@
 nav#site-nav {
   position: fixed;
-  right: 0;
   top: 0;
-  padding: $base-padding;
+  padding: $base-padding $base-padding * 2;
   z-index: 2;
+  a {
+    color: #FFF;
+  }
+}
+
+.nav-left {
+  left: 0;
+  li {
+    color: #FFF;
+    opacity: 0.6;
+    transform: translateX(0px);
+    transition: all .3s ease-in;
+    position: relative;
+    &:hover {
+      opacity: 1;
+      transform: translateX(10px);
+      transition: all .3s ease-in;
+    }
+  }
+}
+.nav-right {
+  right: 0;
+  li {
+    color: #FFF;
+    opacity: 0.6;
+    transform: translateX(0px);
+    transition: all .3s ease-in;
+    position: relative;
+    &:hover {
+      opacity: 1;
+      transform: translateX(-10px);
+      transition: all .3s ease-in;
+    }
+  }
 }
 
 nav#ingredients-nav {

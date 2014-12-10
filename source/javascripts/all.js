@@ -148,9 +148,12 @@ $(document).ready(function () {
       $('.beer-link').click(function() {
         var currentArrayID = $(this).attr('id');
         $(".characteristic p").remove();
-        $(".characteristic li").remove();
+        $(".recommendations li").remove();
+        $('.information-headings h2').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+        $('.information-headings h3').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
 
-
+        $("#type").append(data.beers[currentArrayID].type);
+        $("#name").append(data.beers[currentArrayID].name);
         $("#history").append("<p>" + data.beers[currentArrayID].history + "</p>");
         $("#color").append("<p>" + data.beers[currentArrayID].color + "</p>");
         $("#flavor").append("<p>" + data.beers[currentArrayID].flavor + "</p>");

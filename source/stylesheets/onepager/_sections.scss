@@ -11,9 +11,12 @@
   h3 {
     font-size: 1.2em;
 
-    &:hover {
-      color: $water;
-    }
+  }
+}
+
+.water-col {
+  &:hover {
+    color: $water;
   }
 }
 
@@ -134,11 +137,47 @@
   }
 }
 
-.malt-active {
-  h3 {
-    color: $malt;
+#malt-list {
+  background-color: $transparent-background;
+  padding: $base-padding;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+
+  li {
+    padding: $base-padding;
+    justify-content: space-around;
+    height: 50vh;
+    border-right: 1px solid rgba(255,255,255,0.3);
+
+    p {
+      font-size: .9em;
+    }
+
+    &:first-child {
+      h3 {
+        color: $malt;
+      }
+    }
+    &:nth-child(2) {
+      h3 {
+        color: darken($malt, 10%);
+      }
+    }
+    &:nth-child(3) {
+      h3 {
+        color: darken($malt, 30%);
+      }
+    }
+    &:last-child {
+      border-right: none;
+      h3 {
+        color: darken($malt, 50%);
+      }
+    }
   }
 }
+
 
 .hops {
   background-color: $hops;
