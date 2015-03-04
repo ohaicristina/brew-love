@@ -56,6 +56,10 @@
 
         <script id="water-template" type="x-handlebars-template">
           {{#with properties}}
+            // {{#each property in properties}}
+            //   {{property.title}}
+            //   {{property.name}}
+            // {{/each}}
             <h4 class="information-title">{{ this.[0].title }}</h4>
             <span class="mini-heading">Effects on brew</span>
             <p class="mini-body">{{ this.[0].effects }}</p>
