@@ -24,7 +24,7 @@
   },
   {
     "id": "2",
-    "name":"Munich Lager",
+    "name":"German Lager",
     "type":"Lager",
     "history":"The Germans answer to the Czech Pilsner to keep up with demand in the 1800's. Very similar to the spicy hops of the Pilsner, but a bit more malty.",
     "color":"Light straw to light golden",
@@ -35,7 +35,7 @@
   },
   {
     "id": "3",
-    "name":"American Double/Imperial Pilsner",
+    "name":"American Imperial Pilsner",
     "type":"Lager",
     "history":"Similar to the classic Czech pilsner, but with a good ol' 'MURICA twist. Expect a more bitter, malty and alcoholic beer.",
     "color":"Light straw to light golden",
@@ -54,6 +54,51 @@
     "hops":"Spicy, intense bitterness",
     "malt":"Basic",
     "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
+  },
+  {
+    "id": "5",
+    "name":"German Lager",
+    "type":"Lager",
+    "history":"The Germans weren't the only ones who thought they needed a beer of their own in the 1800's. Inspired by the Czech Pilsners as well, but they tend to be more malt based and less bitter",
+    "color":"Pale straw to pale golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
+  },
+  {
+    "id": "6",
+    "name":"Munich Lager",
+    "type":"Lager",
+    "history":"The Germans weren't the only ones who thought they needed a beer of their own in the 1800's. Inspired by the Czech Pilsners as well, but they tend to be more malt based and less bitter",
+    "color":"Pale straw to pale golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
+  },
+  {
+    "id": "7",
+    "name":"American Lager",
+    "type":"Lager",
+    "history":"The Germans weren't the only ones who thought they needed a beer of their own in the 1800's. Inspired by the Czech Pilsners as well, but they tend to be more malt based and less bitter",
+    "color":"Pale straw to pale golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
+  },
+  {
+    "id": "8",
+    "name":"Bock",
+    "type":"Lager",
+    "history":"The Germans weren't the only ones who thought they needed a beer of their own in the 1800's. Inspired by the Czech Pilsners as well, but they tend to be more malt based and less bitter",
+    "color":"Pale straw to pale golden",
+    "flavor":"High alcohol content lends spicy notes, malty yet sweet",
+    "hops":"Spicy, intense bitterness",
+    "malt":"Basic",
+    "recommendation":["Dogfish Head My Antonia", "Souther Tier Krampus (Imperial Helles Lager)", "Samuel Adams Hallertau Imperial Pilsner"]
   }
+
   ]
 }

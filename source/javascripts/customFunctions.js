@@ -1,5 +1,7 @@
 $(document).ready(function () {
-  listBeers();
+  listLagers();
+  listAles();
+  listHybrids();
   toggleOffCanvas();
   affixNav();
   smoothScroll.init();
@@ -123,9 +125,9 @@ $(document).ready(function () {
   }
 
 
-  //Beer Menu Function
-  function listBeers() {
-    apiString = "data/beerStyles.json";
+  //Beer Menu Functions
+  function listLagers() {
+    apiString = "data/lagerStyles.json";
 
     $.getJSON(apiString, function(data) {
       beers = data.beers;
@@ -165,7 +167,87 @@ $(document).ready(function () {
     });
   }
 
+  function listAles() {
+    apiString = "data/aleStyles.json";
 
+    $.getJSON(apiString, function(data) {
+      beers = data.beers;
+      $(".characteristic p").remove();
+
+      $.each(beers, function(i) {
+        var currentName =  data.beers[i].name;
+        var currentID = data.beers[i].id;
+
+        $(".ales").append('<a class="beer-link" href="#'+ currentName + '" id="'+ currentID + '"><li class="menu-item-box">' + data.beers[currentID].name + '</li></a>');
+      });
+
+      $('.beer-link').click(function() {
+        var currentArrayID = $(this).attr('id');
+        $(".characteristic p").remove();
+        $(".recommendations li").remove();
+        $('.information-headings h2').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+        $('.information-headings h3').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+
+        $("#type").append(data.beers[currentArrayID].type);
+        $("#name").append(data.beers[currentArrayID].name);
+        $("#history").append("<p>" + data.beers[currentArrayID].history + "</p>");
+        $("#color").append("<p>" + data.beers[currentArrayID].color + "</p>");
+        $("#flavor").append("<p>" + data.beers[currentArrayID].flavor + "</p>");
+        $("#hops").append("<p>" + data.beers[currentArrayID].hops + "</p>");
+        $("#malt").append("<p>" + data.beers[currentArrayID].malt + "</p>");
+        $(".recommendations").append("<li>" + data.beers[currentArrayID].recommendation + "</li>");
+      });
+
+      // $('.beer-link').click(function() {
+      //   var currentID = $(this).attr('id');
+      //
+      //   window.history.pushState('obj', 'newtitle', currentID);
+      //   return false;
+      // });
+
+    });
+  }
+
+  function listHybrids() {
+    apiString = "data/hybridStyles.json";
+
+    $.getJSON(apiString, function(data) {
+      beers = data.beers;
+      $(".characteristic p").remove();
+
+      $.each(beers, function(i) {
+        var currentName =  data.beers[i].name;
+        var currentID = data.beers[i].id;
+
+        $(".hybrids").append('<a class="beer-link" href="#'+ currentName + '" id="'+ currentID + '"><li class="menu-item-box">' + data.beers[currentID].name + '</li></a>');
+      });
+
+      $('.beer-link').click(function() {
+        var currentArrayID = $(this).attr('id');
+        $(".characteristic p").remove();
+        $(".recommendations li").remove();
+        $('.information-headings h2').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+        $('.information-headings h3').contents().filter(function() { return this.nodeType == Node.TEXT_NODE; }).remove();
+
+        $("#type").append(data.beers[currentArrayID].type);
+        $("#name").append(data.beers[currentArrayID].name);
+        $("#history").append("<p>" + data.beers[currentArrayID].history + "</p>");
+        $("#color").append("<p>" + data.beers[currentArrayID].color + "</p>");
+        $("#flavor").append("<p>" + data.beers[currentArrayID].flavor + "</p>");
+        $("#hops").append("<p>" + data.beers[currentArrayID].hops + "</p>");
+        $("#malt").append("<p>" + data.beers[currentArrayID].malt + "</p>");
+        $(".recommendations").append("<li>" + data.beers[currentArrayID].recommendation + "</li>");
+      });
+
+      // $('.beer-link').click(function() {
+      //   var currentID = $(this).attr('id');
+      //
+      //   window.history.pushState('obj', 'newtitle', currentID);
+      //   return false;
+      // });
+
+    });
+  }
 
   // .done(function(data) {
   //   $("li").each(function(i) {
